@@ -1,7 +1,9 @@
 type Show = {
   id: string;
   slug: string;
-  runtime: number
+  title: string;
+  source: string;
+  runtime: number;
 };
 
 export default Show;
