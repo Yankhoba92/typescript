@@ -20,7 +20,17 @@ class App {
         this.appElement.append(title);
         this.appElement.append(img);
         this.appElement.append(p);
-        console.log(data);
+        // console.log(data);
+    };
+    displaySocialMedia = (data) => {
+        data.map((value) => {
+            const p = document.createElement("p");
+            const img = document.createElement("img");
+            img.setAttribute("src", value.getIcon());
+            p.append(value.name);
+            p.append(img);
+            this.appElement.append(p);
+        });
     };
 }
 export default App;
