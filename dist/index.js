@@ -1,5 +1,4 @@
-const myVar = "valeur";
-const myFunction = () => {
-    return 45;
-};
-export {};
+import App from "./component/app.js";
+// Instanciation
+const app = new App();
+app.init();

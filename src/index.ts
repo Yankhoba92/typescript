@@ -1,5 +1,6 @@
-const myVar: string = "valeur";
+import App from "./component/app.js";
 
-const myFunction = ():number =>{
-return 45
-}
+// Instanciation
+
+const app: App = new App()
+    app.init();
